@@ -15,7 +15,7 @@ function App() {
           <Route path='/ranking' exact>
             <Ranking />
           </Route>
-          <Route path='/' exact>
+          <Route path='*' exact>
             <Dashboard />
           </Route>
         </Switch>
