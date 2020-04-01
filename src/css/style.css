@@ -1,0 +1,198 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #dae0e2;
+}
+
+nav {
+  background-color: #8b78e6;
+  padding-top: 10px;
+}
+
+nav .navbar-brand {
+  color: #e71c23;
+}
+
+nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+nav .title {
+  font-size: 36px;
+  margin-left: 60px;
+  color: #e71c23;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 690px) {
+  nav .title {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  nav .title {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+}
+
+nav .link {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #818181;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .link:hover {
+  color: #f1f1f1;
+}
+
+@media only screen and (max-width: 690px) {
+  nav .link {
+    font-size: 20px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  nav .link {
+    font-size: 15px;
+    display: block;
+  }
+}
+
+.navSide {
+  float: left;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  background-color: #2f363f;
+  color: white;
+  padding-top: 20px;
+}
+
+.navSide span {
+  color: #747272;
+  text-align: center;
+  padding-left: 90px;
+}
+
+.navSide ul {
+  list-style: none;
+  font-size: 30px;
+}
+
+.navSide ul li {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navSide ul li .active {
+  color: #e71c23;
+}
+
+@media only screen and (max-width: 990px) {
+  .navSide {
+    display: none;
+  }
+}
+
+.subtitle {
+  color: #616c6f;
+}
+
+@media only screen and (max-width: 700px) {
+  .subtitle {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.cards p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dashboard {
+  padding: 30px;
+}
+
+@media only screen and (max-width: 690px) {
+  .dashboard {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .dashboard {
+    padding: 0px;
+  }
+}
+
+.dashboard .country {
+  height: 20px;
+}
+
+.dashboard #countries {
+  width: 30%;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+  border-bottom: 5px solid black;
+}
+
+.ranking {
+  padding: 30px;
+}
+
+@media only screen and (max-width: 690px) {
+  .ranking {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .ranking {
+    padding: 0px;
+  }
+}
+
+.ranking thead {
+  background-color: yellow;
+}
+
+.ranking tbody {
+  background-color: white;
+}
+
+.ranking .my-custom-scrollbar {
+  position: relative;
+  height: 70vh;
+  overflow: auto;
+}
+
+.ranking .table-wrapper-scroll-y {
+  display: block;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

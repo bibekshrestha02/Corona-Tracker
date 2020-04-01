@@ -1,0 +1,155 @@
+$navColor: #8b78e6;
+$brand-Color: #e71c23;
+$sideNav-color: #2f363f;
+$bg-color: #dae0e2;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+}
+
+nav {
+  background-color: $navColor;
+  padding-top: 10px;
+
+  .navbar-brand {
+    color: $brand-Color;
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  .title {
+    font-size: 36px;
+    margin-left: 60px;
+    color: $brand-Color;
+    font-weight: bold;
+    @media only screen and (max-width: 690px) {
+      font-size: 20px;
+      margin-left: 30px;
+    }
+    @media only screen and (max-width: 430px) {
+      font-size: 15px;
+      margin-left: 30px;
+    }
+  }
+  .link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+
+    transition: 0.3s;
+    &:hover {
+      color: #f1f1f1;
+    }
+    @media only screen and (max-width: 690px) {
+      font-size: 20px;
+      display: block;
+    }
+    @media only screen and (max-width: 430px) {
+      font-size: 15px;
+      display: block;
+    }
+  }
+}
+
+.navSide {
+  float: left;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  background-color: $sideNav-color;
+  color: white;
+  padding-top: 20px;
+  span {
+    color: rgb(116, 114, 114);
+    text-align: center;
+    padding-left: 90px;
+  }
+  ul {
+    list-style: none;
+    font-size: 30px;
+    li {
+      cursor: pointer;
+      text-decoration: none;
+
+      .active {
+        color: $brand-Color;
+      }
+    }
+  }
+  @media only screen and (max-width: 990px) {
+    display: none;
+  }
+}
+
+.subtitle {
+  color: #616c6f;
+  @media only screen and (max-width: 700px) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.cards {
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.dashboard {
+  padding: 30px;
+  @media only screen and (max-width: 690px) {
+    padding: 0px;
+  }
+  @media only screen and (max-width: 430px) {
+    padding: 0px;
+  }
+  .country {
+    height: 20px;
+  }
+  #countries {
+    width: 30%;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    border-bottom: 5px solid black;
+  }
+}
+.ranking {
+  padding: 30px;
+  @media only screen and (max-width: 690px) {
+    padding: 0px;
+  }
+  @media only screen and (max-width: 430px) {
+    padding: 0px;
+  }
+  thead {
+    background-color: yellow;
+  }
+  tbody {
+    background-color: white;
+  }
+  .my-custom-scrollbar {
+    position: relative;
+    height: 70vh;
+    overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+    display: block;
+  }
+}
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  height: 50px;
+}
